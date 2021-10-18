@@ -156,12 +156,13 @@ public class DataSearch {
     }
 
     private int sequentialSearchRecursive(String data, int length) {
-        if (length == 0) return -1;
+        if (length == 0 || length == -1){ 
+            System.out.println("Usuário não localizado. -1");
+            System.exit(0);
+        }
 
-        System.out.println(data);
-        System.out.println(usersData.get(length - 1));
-        if (usersData.get(length - 1).contains(data)) { // caso base (achou)
-            return length - 1;
+        if (usersData.get(length).contains(data)) { // caso base (achou)
+            System.out.println(usersData.get(length));
         }
 
         return sequentialSearchRecursive(data, length - 1);

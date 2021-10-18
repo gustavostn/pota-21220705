@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        File file = new File("teste-pequeno.csv");
+        File file = new File("arquivoDados.csv");
         DataSearch data = new DataSearch(file);
         String actionGlobal = "";
 
