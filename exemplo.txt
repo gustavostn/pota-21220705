@@ -1,0 +1,4 @@
+Primeira,Segunda,Terceira
+Quarta
+Quinta,Sexta
+Setima,Oitava,Nona,Decima
